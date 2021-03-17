@@ -1,1 +1,45 @@
 
+<form method='POST' action='/teams'>
+  <h1>Create a Team and Heroes!</h1>
+  <div class="row g-3">
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="Team Name" name="team[name]">
+    </div>
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="Team Motto" name='team[motto]'>
+    </div>
+    <h3>Hero 1</h3>
+    <div class="col-md-3">
+      <input type="text" class="form-control" placeholder="Hero's Name" id='member1_name' name='team[heros][][name]'>
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control" placeholder="Hero's Power" id='member1_power' name='team[heros][][power]'>
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control" placeholder="Hero's Biography" id='member1_bio' name='team[heros][][bio]'>
+    </div>
+    <h3>Hero 2</h3>
+    <div class="col-md-3">
+      <input type="text" class="form-control" placeholder="Hero's Name" id='member2_name' name='team[heros][][name]'>
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control" placeholder="Hero's Power" id='member2_power' name='team[heros][][power]'>
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control" placeholder="Hero's Biography" id='member2_bio' name='team[heros][][bio]'>
+    </div>
+    <h3>Hero 3</h3>
+    <div class="col-md-3">
+      <input type="text" class="form-control" placeholder="Hero's Name" id='member3_name' name='team[heros][][name]'>
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control" placeholder="Hero's Power" id='member3_power' name='team[heros][][power]'>
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control" placeholder="Hero's Biography" id='member3_bio' name='team[heros][][bio]'>
+    </div>
+    <div class='col-md-12'>
+      <input type='submit' class='btn btn-primary btn-lg' id='submit'>
+    </div>
+  </div>
+</form>
